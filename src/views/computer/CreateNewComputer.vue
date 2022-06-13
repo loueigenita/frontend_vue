@@ -64,7 +64,7 @@ export default {
       };
       console.log(postData);
 
-      fetch("http://127.0.0.1:8000/api/computer-items/store", {
+      fetch("http://192.168.43.66:8000/api/computer/store", {
         method: "POST",
         headers: {
           Accept: "application/json",

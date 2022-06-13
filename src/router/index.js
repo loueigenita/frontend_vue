@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
+import Footer from "../views/Footer.vue";
 import Computer from "../views/computer/Computer.vue";
 import ViewComputer from "../views/computer/ViewComputer.vue";
 import CreateNewComputer from "../views/computer/CreateNewComputer.vue";
@@ -18,6 +19,12 @@ const router = createRouter({
       name: "about",
       component: () => import("../views/AboutView.vue"),
     },
+    {
+      path: "/footer",
+      name: "footer",
+      component: () => import("../views/Footer.vue"),
+    },
+
 
     {
       path: "/computer-items",

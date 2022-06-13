@@ -70,7 +70,7 @@ export default {
   },
   methods: {
     getData() {
-      fetch("http://127.0.0.1:8000/api/computer-items/")
+      fetch("http://192.168.43.66:8000/api/computer/")
         .then((res) => res.json())
         .then((data) => {
           this.computer = data;

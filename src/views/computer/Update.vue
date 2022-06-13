@@ -78,7 +78,7 @@ export default {
       console.log("computer");
       console.log(this.computer);
 
-      fetch("http://127.0.0.1:8000/api/computer-items/edit/" + this.id, {
+      fetch("http://192.168.43.66:8000/api/computer/edit/" + this.id, {
         method: "PUT",
         headers: {
           Accept: "application/json",
@@ -95,7 +95,7 @@ export default {
     },
   },
   mounted() {
-    fetch("http://127.0.0.1:8000/api/computer-items/" + this.id)
+    fetch("http://192.168.43.66:8000/api/computer/" + this.id)
       .then((res) => res.json())
       .then((data) => (this.computer = data))
       .then((res) => {
